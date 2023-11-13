@@ -1,0 +1,140 @@
+.header, .container, .all, .contents{
+    display: flex;
+    flex-direction: row;
+}
+
+.header{
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-style: solid;
+    border-width: 2px;
+    border-color: #333333;
+
+    #cart{
+        margin-right: 16px;
+    }
+}
+
+.container{
+    width: 200px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sub{
+    padding: 24px;
+}
+
+.contents{
+    padding: 4px 24px;
+    
+}
+
+.content{
+    border-style: solid;
+    padding: 12px;
+    margin: 0 4px;
+    border-width: 1px;
+    border-color: #f4f4f4;
+}
+
+.sidebar{
+    width: 300px;
+    height: 100vh;
+    padding: 24px;
+    background: #333333;
+
+    .title_sidebar{
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 600;
+        height: 16px;
+    }
+
+    .option{
+        color: #ffffff;
+        font-size: 16px;
+        margin-left: 16px;
+        height: 8px;
+    }
+
+    .checkbox{
+        margin-left: 16px;
+    }
+
+    .label_checkbox{
+        color: #ffffff;
+        font-size: 16px;
+    }
+}
+
+.content{
+    width: 200px;
+    height: fit-content;
+
+    .content_img{
+        width: 200px;
+    }
+}
+
+.title{
+    font-size: 18px;
+    font-weight: 600;
+    height: 4px;
+}
+
+.price{
+    font-size: 24px;
+    color: red;
+    height: 16px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+  
+.modal-content {
+    background-color: #ffffff;
+    margin: 20% auto;
+    width: 50%;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.17);
+    animation-name: modalopen;
+    animation-duration: 1s;
+}
+  
+@keyframes modalopen {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+  
+.modal-header h1 {
+    margin: 1rem 0;
+}
+  
+.modal-header {
+    background: lightblue;
+    display: flex;
+    padding: 0px 24px;
+    justify-content: space-between;
+}
+  
+.modalClose, .modalClose_cart, .modalClose_ordered {
+    font-size: 2rem;
+}
+  
+.modalClose:hover {
+    cursor: pointer;
+}
+  
+.modal-body {
+    padding: 24px;
+    color: black;
+}
