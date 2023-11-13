@@ -353,3 +353,20 @@ const buttonClose_ordered = document.getElementsByClassName('modalClose_ordered'
 $("#reset").on("click", function(){
     localStorage.clear();
 })
+
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.0/firebase-app.js";
+import { getDatabase, ref, push, set, onChildAdded, remove, onChildRemoved }
+    from "https://www.gstatic.com/firebasejs/9.1.0/firebase-database.js";
+// Your web app's Firebase configuration
+const firebaseConfig = {
+    apiKey: "AIzaSyBKKHIt47IGxqgp0QzAraM_WIg8IT9Iqzk",
+    authDomain: "gsdev26us07-ec104.firebaseapp.com",
+    projectId: "gsdev26us07-ec104",
+    storageBucket: "gsdev26us07-ec104.appspot.com",
+    messagingSenderId: "154264919090",
+    appId: "1:154264919090:web:d9d7b2de2ae8aa2834302b"
+};
+const app = initializeApp(firebaseConfig);
+const db = getDatabase(app); //RealtimeDBに接続
+const dbRef = ref(db, "chat"); //RealtimeDB内の"chat"を使う

@@ -1,2 +1,9 @@
-#css無視
-css/style.css
+# Firebase
+/firebase
+
+# Firebase 設定ファイル
+/.firebaserc
+/firebase.json
+
+# Firebase 関連の設定ファイル
+/functions/*.json
