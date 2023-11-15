@@ -1,2 +1,2 @@
-# firebase.envを無視する
-firebase.env
+# .gitignore
+firebaseConfig.js

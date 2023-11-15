@@ -1,3 +1,14 @@
+// 他のファイルでの使用例
+
+import firebase from 'firebase/app';
+import 'firebase/firestore';
+import 'firebase/auth';
+import firebaseConfig from './firebaseConfig';
+
+firebase.initializeApp(firebaseConfig);
+
+// ここから先は通常通りFirebaseを使用できます
+
 // ブックマーク情報を格納する変数
 let bookmarks = [];
 
