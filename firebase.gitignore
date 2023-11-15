@@ -3,7 +3,7 @@
 
 # Firebase 設定ファイル
 /.firebaserc
-/firebase.json
+/firebase.js
 
 # Firebase 関連の設定ファイル
-/functions/*.json
+/functions/*.js
