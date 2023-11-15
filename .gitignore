@@ -1,2 +1,2 @@
-# firebase.jsを無視する
-firebase.js
+# firebase.envを無視する
+firebase.env
