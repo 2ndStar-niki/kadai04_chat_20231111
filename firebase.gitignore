@@ -1,9 +1,2 @@
 # Firebase
-/firebase
-
-# Firebase 設定ファイル
-/.firebaserc
-/firebase.js
-
-# Firebase 関連の設定ファイル
-/functions/*.js
+js/firebase.js
